@@ -5,20 +5,30 @@
 package sanjeevani;
 
 import java.awt.Color;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author rishabh sharma
  */
-public class Try extends javax.swing.JFrame {
+public class Bones extends javax.swing.JFrame {
 
     /**
      * Creates new form Home
      */
-    public Try() {
+    public Bones() {
         initComponents();
+          scaleImage1();
     }
-
+    public void scaleImage1(){
+         ImageIcon icon=new ImageIcon("");
+         Image img=icon.getImage();
+         Image imgScale=img.getScaledInstance(jLabel54.getWidth(), jLabel54.getHeight(),Image.SCALE_SMOOTH);
+         ImageIcon scaleicon=new ImageIcon(imgScale);
+         jLabel54.setIcon(scaleicon);
+         
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -71,12 +81,41 @@ public class Try extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(204, 255, 255));
+
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1000, 101));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sanjeevani/logo.png"))); // NOI18N
 
@@ -155,7 +194,7 @@ public class Try extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(119, 119, 119)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -166,21 +205,19 @@ public class Try extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 16, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(0, 119, 182));
@@ -302,7 +339,7 @@ public class Try extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(83, Short.MAX_VALUE)
+                .addContainerGap(226, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(51, 51, 51)
                 .addComponent(jLabel8)
@@ -609,7 +646,7 @@ public class Try extends javax.swing.JFrame {
                             .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(160, Short.MAX_VALUE))
+                .addContainerGap(199, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -661,29 +698,209 @@ public class Try extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel35.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel35.setText("What to Know About Bone Cancer");
+
+        jLabel36.setBackground(new java.awt.Color(228, 246, 246));
+        jLabel36.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel36.setText(" It is a rare type of cancer that starts in the bones");
+        jLabel36.setOpaque(true);
+
+        jLabel37.setFont(new java.awt.Font("Serif", 0, 16)); // NOI18N
+        jLabel37.setText("<html><p>Bone cancer is a type of cancer that begins in the cells that make up the bones. It is relatively rare compared to other types of cancer, with the most common types of bone cancer being osteosarcoma and chondrosarcoma. Here are some key points to know about bone cancer: </p><br><ul><li>Types of Bone Cancer: There are several types of bone cancer, but the most common ones include: <br> <b>Osteosarcoma</b>: This is the most common form of bone cancer and often occurs in the long bones, such as the arms and legs, particularly in adolescents and young adults.<br> <b>Chondrosarcoma</b>: Chondrosarcoma typically develops in the cartilage of the arms, legs, or pelvis. <br> <b>Ewing Sarcoma</b>: This type of bone cancer most often affects the bones of the arms, legs, or pelvis and primarily affects children and young adults.</li><li>Symptoms: Symptoms of bone cancer may include pain in the affected bone, swelling, tenderness, and in some cases, a lump or mass at the site. These symptoms can sometimes be mistaken for other conditions or injuries.</li><li>Diagnosis: Bone cancer is typically diagnosed through a combination of imaging tests such as X-rays, CT scans, MRI scans, and bone scans. A biopsy, where a small sample of the affected tissue is removed for examination, is often necessary to confirm the diagnosis.</li><li>Treatment: Treatment for bone cancer depends on various factors, including the type and stage of the cancer. Common treatment options include surgery to remove the tumor, chemotherapy, radiation therapy, and targeted therapies. In some cases, a combination of these treatments may be used.</li><li>Prognosis: The prognosis for bone cancer varies depending on the type, stage, and how early it's detected. With early diagnosis and appropriate treatment, many people with bone cancer can achieve remission or long-term survival. However, advanced cases can be more challenging to treat.</li><li>Prevention: There are no known ways to prevent bone cancer, but early detection and timely treatment are crucial for improving outcomes.</li></ul></html>");
+
+        jPanel6.setBackground(new java.awt.Color(228, 246, 246));
+
+        jLabel38.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel38.setText("Table of Contents");
+
+        jLabel39.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel39.setText("Types");
+
+        jLabel40.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel40.setText("Symptomps");
+
+        jLabel41.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel41.setText("Diagnosis");
+
+        jLabel42.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+
+        jLabel43.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel43.setText("Treatment");
+
+        jLabel44.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+
+        jLabel45.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel45.setText("Outlook");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel41)
+                            .addComponent(jLabel40)
+                            .addComponent(jLabel39)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel44)
+                                .addGap(0, 0, 0)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(jLabel43)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel42))))))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel38)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sanjeevani/imresizer-1695056360167.jpg"))); // NOI18N
+        jLabel46.setText("jLabel46");
+        jLabel46.setMaximumSize(new java.awt.Dimension(200, 200));
+        jLabel46.setMinimumSize(new java.awt.Dimension(200, 200));
+        jLabel46.setPreferredSize(new java.awt.Dimension(200, 200));
+        jLabel46.setRequestFocusEnabled(false);
+        jLabel46.setVerifyInputWhenFocusTarget(false);
+
+        jLabel48.setBackground(new java.awt.Color(228, 246, 246));
+        jLabel48.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel48.setText(" Symptoms of Bone cancer");
+        jLabel48.setOpaque(true);
+
+        jLabel47.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel47.setText("<html><p>Pain in the bone is the most common sign of bone cancer. Not all bone cancers cause pain. The pain can come and go, worsen at night or when the bone is used, and isn’t relieved by over-the-counter pain medicine.</p><br><p><b>Other symptoms of bone cancer are:<b></p><ul><li>Swelling </li><li>A soft and warm lump in the arms, legs, chest, or pelvis </li><li>A lump in the back of the throat that causes trouble swallowing or breathing</li><li>Unexplained fever</li><li>Broken bones without a clear cause, leading to sudden, intense pain</li><li>Fatigue</li><li>Weight loss</li><li>Anemia (not enough healthy red blood cells)</li><li>Numbness, tingling, or weakness in different parts of the body if the tumor is pushing on a nerve</li></ul></html>");
+
+        jLabel49.setBackground(new java.awt.Color(228, 246, 246));
+        jLabel49.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel49.setText(" What Are the Main Types of Bone Cancer?");
+        jLabel49.setOpaque(true);
+
+        jLabel50.setText("<html><p></p></html>");
+
+        jLabel51.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel51.setText("<html><p>Read on for more details about these different types of bone cancers.</p><br><p>Osteosarcoma (osteogenic sarcoma) is a cancer that develops in the osteoblasts of immature bone tissue. It’s the most common type of bone cancer.6  In young people, it typically appears in the arm bone near the shoulder or the leg bone near the knee. It’s most common in children, teens, and young people between ages 10 and 30. Males are more likely to develop it than females. In young people, it's more common in Black children and children of some other racial groups and is not as common in White children.</p><br><p>About 10% of osteosarcomas develop in adults over age 60,6 which can appear in any bone. Whites are more likely to get osteosarcoma as adults than other racial groups</p><br><p>Ewing's sarcoma is the second most common type of bone cancer in children and teens under 19. It’s more common in boys than girls. It is much more common in Whites than in other racial groups. These tumors are rare in adults older than 30 but are still the third most common type of bone cancer.</p><br><p>It develops in bone and sometimes in other tissues like muscle, fat, connective tissue, or blood vessels. In the bones, it most often appears in the hips, legs, ribs, shoulder blades, and spine but can form in any bone. It can grow and spread quickly to other body parts, often to the lungs.</p></html>");
+        jLabel51.setMaximumSize(new java.awt.Dimension(2147483647, 40));
+
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sanjeevani/imresizer-1695056744378.jpg"))); // NOI18N
+
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sanjeevani/imresizer-1695029119328.jpg"))); // NOI18N
+
+        jLabel56.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+
+        jLabel57.setBackground(new java.awt.Color(228, 246, 246));
+        jLabel57.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel57.setText("  How Is Bone Cancer Diagnosed?");
+        jLabel57.setOpaque(true);
+
+        jLabel58.setText("<html><p></p></html>");
+
+        jLabel59.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel59.setText("<html><p>Bone cancer is diagnosed by a healthcare provider taking your health history and asking about cancer in your family and then ordering blood and imaging tests. These tests will likely include:</p><ul><li>X-rays and other special imaging tests, like bone scans, computed tomography (CT) scans, magnetic resonance imaging (MRI), positron-emission tomography (PET) scans, and angiograms</li><li>Biopsy to take a sample of the tumor, which uses a needle or surgery to remove the cancer or takes a sample that is then analyzed in the lab</li><li>Blood tests for alkaline phosphatase and lactate dehydrogenase (LDH), compounds that indicate that bone tissue is growing</li></ul></html>");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel52, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(46, 46, 46)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabel58, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel50, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel35, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel53, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel46, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel57, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 805, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jLabel48, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel47, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel49, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 805, Short.MAX_VALUE)
+                            .addComponent(jLabel51, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jLabel36, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 805, Short.MAX_VALUE)
+                            .addComponent(jLabel37, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                    .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 805, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 1612, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1, Short.MAX_VALUE)
+                .addGap(0, 9, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 569, Short.MAX_VALUE)
+                .addGap(35, 35, 35)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel37))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(57, 57, 57)
+                        .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(27, 27, 27)
+                .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel54, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel47, javax.swing.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE))
+                .addGap(50, 50, 50)
+                .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(67, 67, 67)
+                .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -694,232 +911,58 @@ public class Try extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1543, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jScrollPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 859, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 3000, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jLabel34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+        jLabel34.setForeground(new Color(255,255,255));
+    }//GEN-LAST:event_jLabel34MouseExited
 
-    private void jTextField1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseEntered
+    private void jLabel34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseEntered
         // TODO add your handling code here:
-        jTextField1.setText("");
-    }//GEN-LAST:event_jTextField1MouseEntered
+        jLabel34.setForeground(new Color(173,232,244));
 
-    private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
-        // TODO add your handling code here:
-        jLabel4.setBackground(new Color(0,204,255));
-        jLabel4.setForeground(new Color(255,255,255));
-    }//GEN-LAST:event_jLabel4MouseEntered
+    }//GEN-LAST:event_jLabel34MouseEntered
 
-    private void jLabel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseExited
+    private void jLabel32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseExited
         // TODO add your handling code here:
-        jLabel4.setBackground(new Color(255,255,255));
-        jLabel4.setForeground(new Color(0,204,255));
-    }//GEN-LAST:event_jLabel4MouseExited
+        jLabel32.setForeground(new Color(255,255,255));
+    }//GEN-LAST:event_jLabel32MouseExited
 
-    private void jLabel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseEntered
+    private void jLabel32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseEntered
         // TODO add your handling code here:
-       // jLabel5.setBackground(new Color(0,204,255));
-        jLabel5.setForeground(new Color(0,102,204));
-    }//GEN-LAST:event_jLabel5MouseEntered
+        jLabel32.setForeground(new Color(173,232,244));
+    }//GEN-LAST:event_jLabel32MouseEntered
 
-    private void jLabel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseExited
+    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
+        jButton1.setBackground(new Color(0,153,153));
         // TODO add your handling code here:
-//        jLabel5.setBackground(new Color(255,255,255));
-        jLabel5.setForeground(new Color(0,204,255));
-    }//GEN-LAST:event_jLabel5MouseExited
+    }//GEN-LAST:event_jButton1MouseExited
 
-    private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
+    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
         // TODO add your handling code here:
-        //jTextField1.setText("Search Here");
-    }//GEN-LAST:event_jTextField1MouseExited
+        jButton1.setBackground(new Color(173,232,244));
+    }//GEN-LAST:event_jButton1MouseEntered
 
-    private void jLabel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseEntered
-        jLabel6.setForeground(new Color(0,102,204));
+    private void jTextField3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel6MouseEntered
+        jTextField3.setText("");
+    }//GEN-LAST:event_jTextField3MouseEntered
 
-    private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
-          jLabel6.setForeground(new Color(0,204,255));
+    private void jLabel30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel6MouseExited
-
-    private void jLabel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseEntered
-        // TODO add your handling code here:
-        jLabel7.setBackground(new Color(144,224,239));
-    }//GEN-LAST:event_jLabel7MouseEntered
-
-    private void jLabel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseExited
-        // TODO add your handling code here:
-        jLabel7.setBackground(new Color(0,119,182));
-    }//GEN-LAST:event_jLabel7MouseExited
-
-    private void jLabel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseEntered
-        jLabel8.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel8MouseEntered
-
-    private void jLabel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseExited
-        jLabel8.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel8MouseExited
-
-    private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
-        jLabel3.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel3MouseEntered
-
-    private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseExited
-        jLabel3.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel3MouseExited
-
-    private void jLabel10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseEntered
-        jLabel10.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel10MouseEntered
-
-    private void jLabel10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseExited
-        // TODO add your handling code here:
-        jLabel10.setBackground(new Color(0,119,182));
-    }//GEN-LAST:event_jLabel10MouseExited
-
-    private void jLabel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseEntered
-        jLabel9.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel9MouseEntered
-
-    private void jLabel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseExited
-        jLabel9.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel9MouseExited
-
-    private void jLabel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseEntered
-        jLabel12.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel12MouseEntered
-
-    private void jLabel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseExited
-        jLabel12.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel12MouseExited
-
-    private void jLabel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseEntered
-        jLabel13.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel13MouseEntered
-
-    private void jLabel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseExited
-        jLabel13.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel13MouseExited
-
-    private void jLabel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseEntered
-        jLabel11.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel11MouseEntered
-
-    private void jLabel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseExited
-        jLabel11.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel11MouseExited
-
-    private void jLabel24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseEntered
-        // TODO add your handling code here:
-        jLabel24.setForeground(new Color(202,240,248));
-        jLabel24.setText(" Login");
-        jLabel24.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel24MouseEntered
-
-    private void jLabel24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseExited
-        // TODO add your handling code here:
-        jLabel24.setForeground(new Color(255,255,255));
-        jLabel24.setText("Login");
-        jLabel24.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel24MouseExited
-
-    private void jLabel25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseEntered
-        // TODO add your handling code here:
-          jLabel25.setForeground(new Color(202,240,248));
-        jLabel25.setText(" About us");
-        jLabel25.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel25MouseEntered
-
-    private void jLabel25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseExited
-        // TODO add your handling code here:
-        jLabel25.setForeground(new Color(255,255,255));
-        jLabel25.setText("About us");
-        jLabel25.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel25MouseExited
-
-    private void jLabel26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseEntered
-        // TODO add your handling code here:
-          jLabel26.setForeground(new Color(202,240,248));
-        jLabel26.setText(" Blog");
-        jLabel26.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel26MouseEntered
-
-    private void jLabel26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseExited
-        // TODO add your handling code here:
-         jLabel26.setForeground(new Color(255,255,255));
-        jLabel26.setText("Blog");
-        jLabel26.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel26MouseExited
-
-    private void jLabel27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseEntered
-        // TODO add your handling code here:
-         jLabel27.setForeground(new Color(202,240,248));
-        jLabel27.setText(" Contact us");
-        jLabel27.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel27MouseEntered
-
-    private void jLabel27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseExited
-        // TODO add your handling code here:
-        jLabel27.setForeground(new Color(255,255,255));
-        jLabel27.setText("Contact us");
-        jLabel27.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel27MouseExited
-
-    private void jLabel28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseEntered
-        // TODO add your handling code here:
-         jLabel28.setForeground(new Color(202,240,248));
-        jLabel28.setText(" FAQs");
-        jLabel28.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel28MouseEntered
-
-    private void jLabel28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseExited
-        // TODO add your handling code here:
-        jLabel28.setForeground(new Color(255,255,255));
-        jLabel28.setText("FAQs");
-        jLabel28.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel28MouseExited
-
-    private void jLabel29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseEntered
-        // TODO add your handling code here:
-         jLabel29.setForeground(new Color(202,240,248));
-        jLabel29.setText(" My Account");
-        jLabel29.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel29MouseEntered
-
-    private void jLabel29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseExited
-        // TODO add your handling code here:
-         jLabel29.setForeground(new Color(255,255,255));
-        jLabel29.setText("My Account");
-        jLabel29.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel29MouseExited
+        jLabel30.setForeground(new Color(255,255,255));
+        jLabel30.setText("Terms and Conditions");
+        jLabel30.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel30MouseExited
 
     private void jLabel30MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseEntered
         // TODO add your handling code here:
@@ -928,48 +971,217 @@ public class Try extends javax.swing.JFrame {
         jLabel30.setBackground(new Color(3,4,94));
     }//GEN-LAST:event_jLabel30MouseEntered
 
-    private void jLabel30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseExited
+    private void jLabel29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseExited
         // TODO add your handling code here:
-         jLabel30.setForeground(new Color(255,255,255));
-        jLabel30.setText("Terms and Conditions");
-        jLabel30.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel30MouseExited
+        jLabel29.setForeground(new Color(255,255,255));
+        jLabel29.setText("My Account");
+        jLabel29.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel29MouseExited
 
-    private void jTextField3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseEntered
+    private void jLabel29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseEntered
         // TODO add your handling code here:
-        jTextField3.setText("");
-    }//GEN-LAST:event_jTextField3MouseEntered
+        jLabel29.setForeground(new Color(202,240,248));
+        jLabel29.setText(" My Account");
+        jLabel29.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel29MouseEntered
 
-    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
+    private void jLabel28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseExited
         // TODO add your handling code here:
-        jButton1.setBackground(new Color(173,232,244));
-    }//GEN-LAST:event_jButton1MouseEntered
+        jLabel28.setForeground(new Color(255,255,255));
+        jLabel28.setText("FAQs");
+        jLabel28.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel28MouseExited
 
-    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-        jButton1.setBackground(new Color(0,153,153));
+    private void jLabel28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseExited
+        jLabel28.setForeground(new Color(202,240,248));
+        jLabel28.setText(" FAQs");
+        jLabel28.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel28MouseEntered
 
-    private void jLabel32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseEntered
+    private void jLabel27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseExited
         // TODO add your handling code here:
-        jLabel32.setForeground(new Color(173,232,244));
-    }//GEN-LAST:event_jLabel32MouseEntered
+        jLabel27.setForeground(new Color(255,255,255));
+        jLabel27.setText("Contact us");
+        jLabel27.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel27MouseExited
 
-    private void jLabel32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseExited
+    private void jLabel27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseEntered
         // TODO add your handling code here:
-        jLabel32.setForeground(new Color(255,255,255));
-    }//GEN-LAST:event_jLabel32MouseExited
+        jLabel27.setForeground(new Color(202,240,248));
+        jLabel27.setText(" Contact us");
+        jLabel27.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel27MouseEntered
 
-    private void jLabel34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseEntered
+    private void jLabel26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseExited
         // TODO add your handling code here:
-        jLabel34.setForeground(new Color(173,232,244));
-        
-    }//GEN-LAST:event_jLabel34MouseEntered
+        jLabel26.setForeground(new Color(255,255,255));
+        jLabel26.setText("Blog");
+        jLabel26.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel26MouseExited
 
-    private void jLabel34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseExited
+    private void jLabel26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseEntered
         // TODO add your handling code here:
-        jLabel34.setForeground(new Color(255,255,255));
-    }//GEN-LAST:event_jLabel34MouseExited
+        jLabel26.setForeground(new Color(202,240,248));
+        jLabel26.setText(" Blog");
+        jLabel26.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel26MouseEntered
+
+    private void jLabel25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseExited
+        // TODO add your handling code here:
+        jLabel25.setForeground(new Color(255,255,255));
+        jLabel25.setText("About us");
+        jLabel25.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel25MouseExited
+
+    private void jLabel25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseEntered
+        // TODO add your handling code here:
+        jLabel25.setForeground(new Color(202,240,248));
+        jLabel25.setText(" About us");
+        jLabel25.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel25MouseEntered
+
+    private void jLabel24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseExited
+        // TODO add your handling code here:
+        jLabel24.setForeground(new Color(255,255,255));
+        jLabel24.setText("Login");
+        jLabel24.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel24MouseExited
+
+    private void jLabel24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseEntered
+        // TODO add your handling code here:
+        jLabel24.setForeground(new Color(202,240,248));
+        jLabel24.setText(" Login");
+        jLabel24.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel24MouseEntered
+
+    private void jLabel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseExited
+        jLabel13.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel13MouseExited
+
+    private void jLabel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseEntered
+        jLabel13.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel13MouseEntered
+
+    private void jLabel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseExited
+        jLabel12.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel12MouseExited
+
+    private void jLabel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseEntered
+        jLabel12.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel12MouseEntered
+
+    private void jLabel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseExited
+        jLabel11.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11MouseExited
+
+    private void jLabel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseEntered
+        jLabel11.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11MouseEntered
+
+    private void jLabel10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseExited
+        // TODO add your handling code here:
+        jLabel10.setBackground(new Color(0,119,182));
+    }//GEN-LAST:event_jLabel10MouseExited
+
+    private void jLabel10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseEntered
+        jLabel10.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel10MouseEntered
+
+    private void jLabel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseExited
+        jLabel9.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel9MouseExited
+
+    private void jLabel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseEntered
+        jLabel9.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel9MouseEntered
+
+    private void jLabel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseExited
+        jLabel8.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel8MouseExited
+
+    private void jLabel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseEntered
+        jLabel8.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel8MouseEntered
+
+    private void jLabel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseExited
+        // TODO add your handling code here:
+        jLabel7.setBackground(new Color(0,119,182));
+    }//GEN-LAST:event_jLabel7MouseExited
+
+    private void jLabel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseEntered
+        // TODO add your handling code here:
+        jLabel7.setBackground(new Color(144,224,239));
+    }//GEN-LAST:event_jLabel7MouseEntered
+
+    private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseExited
+        jLabel3.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel3MouseExited
+
+    private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
+        jLabel3.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel3MouseEntered
+
+    private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
+        jLabel6.setForeground(new Color(0,204,255));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel6MouseExited
+
+    private void jLabel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseEntered
+        jLabel6.setForeground(new Color(0,102,204));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel6MouseEntered
+
+    private void jLabel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseExited
+        // TODO add your handling code here:
+        jLabel4.setBackground(new Color(255,255,255));
+        jLabel4.setForeground(new Color(0,204,255));
+    }//GEN-LAST:event_jLabel4MouseExited
+
+    private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
+        // TODO add your handling code here:
+        jLabel4.setBackground(new Color(0,204,255));
+        jLabel4.setForeground(new Color(255,255,255));
+    }//GEN-LAST:event_jLabel4MouseEntered
+
+    private void jLabel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseExited
+        // TODO add your handling code here:
+        //        jLabel5.setBackground(new Color(255,255,255));
+        jLabel5.setForeground(new Color(0,204,255));
+    }//GEN-LAST:event_jLabel5MouseExited
+
+    private void jLabel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseEntered
+        // TODO add your handling code here:
+        // jLabel5.setBackground(new Color(0,204,255));
+        jLabel5.setForeground(new Color(0,102,204));
+    }//GEN-LAST:event_jLabel5MouseEntered
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
+        // TODO add your handling code here:
+        //jTextField1.setText("Search Here");
+    }//GEN-LAST:event_jTextField1MouseExited
+
+    private void jTextField1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseEntered
+        // TODO add your handling code here:
+        jTextField1.setText("");
+    }//GEN-LAST:event_jTextField1MouseEntered
 
     /**
      * @param args the command line arguments
@@ -988,20 +1200,20 @@ public class Try extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tuberculosis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tuberculosis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tuberculosis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tuberculosis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Try().setVisible(true);
+                new Bones().setVisible(true);
             }
         });
     }
@@ -1036,8 +1248,32 @@ public class Try extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1047,6 +1283,7 @@ public class Try extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;

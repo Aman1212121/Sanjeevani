@@ -5,20 +5,30 @@
 package sanjeevani;
 
 import java.awt.Color;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author rishabh sharma
  */
-public class Try extends javax.swing.JFrame {
+public class Food extends javax.swing.JFrame {
 
     /**
      * Creates new form Home
      */
-    public Try() {
+    public Food() {
         initComponents();
+          scaleImage1();
     }
-
+    public void scaleImage1(){
+         ImageIcon icon=new ImageIcon("");
+         Image img=icon.getImage();
+         Image imgScale=img.getScaledInstance(jLabel54.getWidth(), jLabel54.getHeight(),Image.SCALE_SMOOTH);
+         ImageIcon scaleicon=new ImageIcon(imgScale);
+         jLabel54.setIcon(scaleicon);
+         
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -71,12 +81,68 @@ public class Try extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(204, 255, 255));
+
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1000, 101));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sanjeevani/logo.png"))); // NOI18N
 
@@ -155,32 +221,30 @@ public class Try extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(119, 119, 119)
+                .addGap(131, 131, 131)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(204, 204, 204))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 16, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(0, 119, 182));
@@ -302,7 +366,7 @@ public class Try extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(83, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(51, 51, 51)
                 .addComponent(jLabel8)
@@ -609,7 +673,7 @@ public class Try extends javax.swing.JFrame {
                             .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(160, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -656,34 +720,376 @@ public class Try extends javax.swing.JFrame {
                             .addComponent(jLabel24))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel28)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
+
+        jLabel35.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel35.setText("What Is Food Poisoning?");
+
+        jLabel36.setBackground(new java.awt.Color(228, 246, 246));
+        jLabel36.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel36.setText("By Megan Coffee, MD Updated on September 05, 2023  Medically reviewed by Aman, MD");
+        jLabel36.setOpaque(true);
+
+        jLabel37.setFont(new java.awt.Font("Serif", 0, 16)); // NOI18N
+        jLabel37.setText("<html><p>Food poisoning is common. In fact, according to the Centers for Disease Control and Prevention, every year approximately one in six individuals in the United States will have a foodborne illness. </p><br><p>Although the precise symptoms vary depending on the specific germ (e.g., bacteria, virus, or parasite) contaminating the food or drink, most people with food poisoning experience nausea, vomiting, and/or diarrhea that can be managed with at-home care measures. In some cases, antibiotics or hospitalization for intravenous (through the vein) fluids may be required.  </p></html>");
+
+        jPanel6.setBackground(new java.awt.Color(228, 246, 246));
+
+        jLabel38.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel38.setText("Table of Contents");
+
+        jLabel39.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel39.setText("Types");
+
+        jLabel40.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel40.setText("Symptomps");
+
+        jLabel41.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel41.setText("Diagnosis");
+
+        jLabel42.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+
+        jLabel43.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel43.setText("Treatment");
+
+        jLabel44.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+
+        jLabel45.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel45.setText("Prevention");
+
+        jLabel74.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel74.setText("Causes");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel40)
+                            .addComponent(jLabel39)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel44)
+                                .addGap(0, 0, 0)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(jLabel41)
+                                        .addGap(24, 24, 24)
+                                        .addComponent(jLabel42))
+                                    .addComponent(jLabel43)
+                                    .addComponent(jLabel74)))))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(27, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel38)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(32, Short.MAX_VALUE))
+        );
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sanjeevani/imresizer-1695056360167.jpg"))); // NOI18N
+        jLabel46.setText("jLabel46");
+        jLabel46.setMaximumSize(new java.awt.Dimension(200, 200));
+        jLabel46.setMinimumSize(new java.awt.Dimension(200, 200));
+        jLabel46.setPreferredSize(new java.awt.Dimension(200, 200));
+        jLabel46.setRequestFocusEnabled(false);
+        jLabel46.setVerifyInputWhenFocusTarget(false);
+
+        jLabel50.setText("<html><p></p></html>");
+
+        jLabel58.setText("<html><p></p></html>");
+
+        jLabel60.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel60.setText("Food Poisoning Symptoms");
+
+        jLabel61.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel61.setText("<html><p>Most food poisoning illnesses cause nausea, vomiting, and or diarrhea, which may be bloody, watery, or mucous-like.</p><br><p>Other potential symptoms of food poisoning include one or more of the following:</p><ul><li>Abdominal cramps and/or abdominal discomfort or pain</li><br><li>Fever</li><br><li>Headache</li><br><li>Weakness</li></ul><p>Symptoms may vary based on the specific germ contaminating the food. In addition, symptoms of food poisoning may develop within a few hours of eating or drinking, or they may take a longer period of time—even days—to develop.</p><html>");
+
+        jLabel47.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel47.setText("When to Seek Medical Attention");
+
+        jLabel48.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel48.setText("<html><p>Most cases of food poisoning are uncomfortable but pass without consequence. There are certain signs that indicate medical attention is needed, however.<br>  Contact your healthcare provider if you:</p><ul><li>Cannot keep down liquids because of vomiting or you cannot (or feel as if you can't) drink enough to stay hydrated</li><li>Become lightheaded or feel weak when you stand up</li><li>Have a very dry mouth or throat</li><li>Cannot urinate or urinate very little</li><li>Experience diarrhea that persists for more than three days</li><li>Have bloody or black, tarry stools</li><li>Have a high or persistent fever</li><li>Have sudden or severe abdominal pain, cramping, and/or abdominal rigidness</li><li>Notice that your child cries without tears, has fewer wet diapers, dry mouth, or has any other symptoms of dehydration</li></ul></html>");
+
+        jLabel49.setBackground(new java.awt.Color(228, 246, 246));
+        jLabel49.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel49.setText("<html>Dehydration is a potentially serious complication of all types of food poisoning. Significant fluid loss can result from vomiting and diarrhea.</html>");
+        jLabel49.setOpaque(true);
+
+        jLabel51.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel51.setText("Types of Food Poisoning");
+
+        jLabel52.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel52.setText("<html>To better understand variations in how food poisoning can present, it's helpful to know about the various microbes that can cause it. Some common microbes include:</html>");
+
+        jLabel53.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel53.setText("Norvovirus");
+
+        jLabel55.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel55.setText("<html>Norovirus can cause food poisoning and is often associated with cruise ships or other crowded settings, such as daycare centers.  Symptoms of norovirus food poisoning begin 12 to 48 hours after exposure and include abdominal cramps, along with watery diarrhea (more common in adults) and/or vomiting (more common in children).</html>");
+
+        jLabel56.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel56.setText("Campylobacter");
+
+        jLabel57.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel57.setText("<html>Food poisoning from Campylobacter is usually associated with eating undercooked chicken or drinking unpasteurized milk or contaminated water. Symptoms tend to develop two to five days after exposure and include diarrhea (sometimes bloody), fever, abdominal cramps, nausea, muscle aches, and headaches.<br>Guillain–Barré syndrome is a rare potential complication of Campylobacter infection.</html>");
+
+        jLabel59.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel59.setText("Salmonella");
+
+        jLabel62.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel62.setText("<html>Food poisoning from Salmonella causes watery diarrhea, fever, abdominal cramps, nausea, and vomiting six to 72 hours after exposure.  There are many potential food sources of salmonella, including eggs, chicken, meat, unpasteurized milk or juice, cheese, spices, nuts, and raw fruits and vegetables (notably, alfalfa sprouts and melon)..</html>");
+
+        jLabel63.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel63.setText("Escherichia coli O157 ");
+
+        jLabel64.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel64.setText("<html>Individuals can develop an Escherichia coli (E. coli) O157 infection three to four days after eating contaminated, undercooked meat products, especially hamburgers. Other potential sources include raw milk, contaminated water, and unpasteurized juice.  Infection with E. coli O157 causes severe stomach cramps, bloody diarrhea, and, sometimes, a low-grade fever. While most people recover within five to seven days without treatment, a life-threatening condition called hemolytic uremic syndrome (HUS)—also called \"hamburger disease\"—may develop.</html>");
+
+        jLabel65.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+
+        jLabel66.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel66.setText("Shigella");
+
+        jLabel67.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel67.setText("<html>Shigella is a bacteria that may cause bloody or mucous-containing diarrhea, in addition to abdominal cramps and a high fever, usually within one to two days of exposure.  Potential food sources of shigella contamination include raw vegetables, sandwiches, and salads that require a lot of preparation by hand, such as potato salad.</html>");
+
+        jLabel68.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel68.setText("Clostridium Botulinum");
+
+        jLabel69.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel69.setText("<html>Food poisoning from Clostridium botulinum, also called botulism, may occur after 12 to 36 hours of exposure to vegetables and other foods that are preserved and canned at home, such as honey (which is why it should not be fed to infants under 1 year of age).2  In addition to nausea, vomiting, and abdominal cramps, botulism can cause neurological symptoms, some of which are potentially fatal (e.g., double vision and trouble with swallowing, talking, and breathing). In infants, weakness, constipation, and problems with feeding may occur.</html>");
+
+        jLabel70.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel70.setText("Giardia Duodenalis");
+
+        jLabel71.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel71.setText("<html> Infection with Giardia duodenalis, a parasite that can live in the intestines of animals and people, causes diarrhea, abdominal cramping, bloating, nausea, and foul-smelling stools within one to two weeks of exposure.  People usually get infected with Giardia duodenalis by drinking contaminated water; however, a person can also get infected by eating uncooked meat that is contaminated with the parasite's cysts.</html>");
+
+        jLabel72.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel72.setText("Causes");
+
+        jLabel73.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel73.setText("<html> The contamination of food may occur in different ways, such as food that is undercooked, improperly processed or canned, or prepared by someone who is sick.  Food grown in contaminated water is another potential source, as is cross-contamination that occurs during food preparation (for example, cutting up carrots on the meat cutting board).  While anyone can get food poisoning, certain groups are at a higher risk. Examples include:<ul><li>Anyone with a weakened immune system (for example, a person with HIV, cancer, liver disease, diabetes, or someone who is on steroid therapy)</li><li>Pregnant women</li><li>People who live in or spend a lot of time in crowded settings, like military barracks, daycare centers, cruise ships, or nursing homes</li></ul><p>In addition, certain populations of people—infants, small children, and the elderly—are more likely to become dehydrated from food poisoning.</p></html>");
+
+        jLabel75.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel75.setText("Diagnosis");
+
+        jLabel76.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel76.setText("<html>Many people do not see their healthcare provider if they have classic food poisoning symptoms and there is a history of another person or group of people also getting sick from eating the same food.  This is generally reasonable unless you are a high-risk individual (e.g., elderly, pregnant or immunocompromised) or your symptoms are severe or persistent. In these instances, it's important to contact your healthcare provider.  If you see your healthcare provider, they will perform a medical history and physical examination. Additional tests (blood, urine, or stool tests, for example) may be ordered to evaluate for alternative diagnoses or complications and to look for the potential source of infection, especially in the case of a community outbreak.</html>");
+
+        jLabel77.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel77.setText("Medical History");
+
+        jLabel78.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel78.setText("<html>During a medical history, your healthcare provider will ask you several questions about your symptoms, including their duration and severity. They will also inquire about what you ate, as well as patterns of symptoms (e.g., whether or not everyone in your family got sick after eating a certain dish or after a family picnic)..</html>");
+
+        jLabel79.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel79.setText("Physical Examination");
+
+        jLabel80.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel80.setText("<html>During a medical history, your healthcare provider will ask you several questions about your symptoms, including their duration and severity. They will also inquire about what you ate, as well as patterns of symptoms (e.g., whether or not everyone in your family got sick after eating a certain dish or after a family picnic)..</html>");
+
+        jLabel81.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel81.setText("Test");
+
+        jLabel82.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel82.setText("<html>In most cases, a healthcare provider will presume a diagnosis of food poisoning based on a medical history and physical examination alone. They are unlikely to move forward with further tests, since identifying the specific source of infection does not usually alter the treatment plan.  That said, additional tests may be ordered if your healthcare provider suspects a different diagnosis (for example, appendicitis) or a complication from food poisoning (for example, dehydration or sepsis from bacteria entering the bloodstream).<br>Examples of such tests include:<ul><li>A basic metabolic panel and a urinalysis to check for dehydration</li><br><li>A complete blood count to check for severe infection or anemia</li><br><li>A computed tomography scan to check for other diagnoses</li></ul><p>Lastly, for outbreak identification or severe cases of food poisoning that may require a certain medication, stool tests may be ordered to look for and identify the cause of the infection.</p></html>");
+
+        jLabel83.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel83.setText("Prevention");
+
+        jLabel84.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel84.setText("<html>Avoiding contaminated foods and water is the key to preventing foodborne illnesses. That said, if you do get sick, don't be hard on yourself—sometimes, even with the best precautions, contamination occurs.<br><p>To reduce the chance of ingesting contaminated food:</p><ul><li>Wash your hands for 20 seconds with soap and water before, during, and after preparing and cooking food and before eating.</li><br><li>Wash your knives, cutting boards, countertops, and other cooking utensils with soap and hot water.</li><br><li>Rinse fresh fruits, vegetables, and bagged greens.</li><br><li>Keep raw meat, eggs, seafood, and poultry away from other ready-to-serve foods or foods in the fridge.</li><br><li>Use separate cooking utensils/plates for raw meat, poultry, and seafood.</li><br><li>Avoid unpasteurized milk (raw milk) and juices.</li><br></ul><p>Also, when cooking, use a food thermometer to make sure food is cooked to the appropriate temperature needed to kill germs (e.g., 165 degrees for all poultry).</p><br><p>In addition, throw out foods that are past their expiration date, even if they do not smell \"bad\" or look \"funny.\" Many foods that are contaminated look and smell normal.</p><br><p>When traveling to other countries, do not drink tap water or use ice made from tap water, and try to avoid eating fruits and vegetables you can't cook or peel.</p><br><p>Another way to avoid food poisoning is to follow a predominantly plant-based diet, as many bacteria and parasites are more common in meat and animal products.</p><br></html>");
+
+        jLabel85.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel85.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel85.setText("<html>Bacteria multiply faster in warmer temperatures, which is why cases of food poisoning increase in the summer months. Be extra careful to follow food safety rules during summer picnics and barbecues.</html>");
+        jLabel85.setOpaque(true);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(46, 46, 46)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel58)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jLabel81, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel51, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel60, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel50, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel35, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel47, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel53, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel56, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel59, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel63, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel66)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel65))
+                            .addComponent(jLabel68, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel70, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel72, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel75, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel77, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel79, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel83, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel37, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel36, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 932, Short.MAX_VALUE)
+                            .addComponent(jLabel84, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel82, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel80, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel78, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel76, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel73, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel71, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel69, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel67, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel64, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel57, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel55, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel52, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel49, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel48, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 932, Short.MAX_VALUE)
+                            .addComponent(jLabel46, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel61, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel62, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jLabel85, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addGap(346, 346, 346))))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1606, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 569, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel49, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel51)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel70, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel73, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel75, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabel76, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel78, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel81, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel82, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(69, 69, 69)
+                .addComponent(jLabel83)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel84, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(87, 87, 87)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -695,231 +1101,59 @@ public class Try extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1543, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1618, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 859, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 4396, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jLabel34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+        jLabel34.setForeground(new Color(255,255,255));
+    }//GEN-LAST:event_jLabel34MouseExited
 
-    private void jTextField1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseEntered
+    private void jLabel34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseEntered
         // TODO add your handling code here:
-        jTextField1.setText("");
-    }//GEN-LAST:event_jTextField1MouseEntered
+        jLabel34.setForeground(new Color(173,232,244));
 
-    private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
-        // TODO add your handling code here:
-        jLabel4.setBackground(new Color(0,204,255));
-        jLabel4.setForeground(new Color(255,255,255));
-    }//GEN-LAST:event_jLabel4MouseEntered
+    }//GEN-LAST:event_jLabel34MouseEntered
 
-    private void jLabel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseExited
+    private void jLabel32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseExited
         // TODO add your handling code here:
-        jLabel4.setBackground(new Color(255,255,255));
-        jLabel4.setForeground(new Color(0,204,255));
-    }//GEN-LAST:event_jLabel4MouseExited
+        jLabel32.setForeground(new Color(255,255,255));
+    }//GEN-LAST:event_jLabel32MouseExited
 
-    private void jLabel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseEntered
+    private void jLabel32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseEntered
         // TODO add your handling code here:
-       // jLabel5.setBackground(new Color(0,204,255));
-        jLabel5.setForeground(new Color(0,102,204));
-    }//GEN-LAST:event_jLabel5MouseEntered
+        jLabel32.setForeground(new Color(173,232,244));
+    }//GEN-LAST:event_jLabel32MouseEntered
 
-    private void jLabel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseExited
+    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
+        jButton1.setBackground(new Color(0,153,153));
         // TODO add your handling code here:
-//        jLabel5.setBackground(new Color(255,255,255));
-        jLabel5.setForeground(new Color(0,204,255));
-    }//GEN-LAST:event_jLabel5MouseExited
+    }//GEN-LAST:event_jButton1MouseExited
 
-    private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
+    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
         // TODO add your handling code here:
-        //jTextField1.setText("Search Here");
-    }//GEN-LAST:event_jTextField1MouseExited
+        jButton1.setBackground(new Color(173,232,244));
+    }//GEN-LAST:event_jButton1MouseEntered
 
-    private void jLabel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseEntered
-        jLabel6.setForeground(new Color(0,102,204));
+    private void jTextField3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel6MouseEntered
+        jTextField3.setText("");
+    }//GEN-LAST:event_jTextField3MouseEntered
 
-    private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
-          jLabel6.setForeground(new Color(0,204,255));
+    private void jLabel30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel6MouseExited
-
-    private void jLabel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseEntered
-        // TODO add your handling code here:
-        jLabel7.setBackground(new Color(144,224,239));
-    }//GEN-LAST:event_jLabel7MouseEntered
-
-    private void jLabel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseExited
-        // TODO add your handling code here:
-        jLabel7.setBackground(new Color(0,119,182));
-    }//GEN-LAST:event_jLabel7MouseExited
-
-    private void jLabel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseEntered
-        jLabel8.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel8MouseEntered
-
-    private void jLabel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseExited
-        jLabel8.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel8MouseExited
-
-    private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
-        jLabel3.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel3MouseEntered
-
-    private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseExited
-        jLabel3.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel3MouseExited
-
-    private void jLabel10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseEntered
-        jLabel10.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel10MouseEntered
-
-    private void jLabel10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseExited
-        // TODO add your handling code here:
-        jLabel10.setBackground(new Color(0,119,182));
-    }//GEN-LAST:event_jLabel10MouseExited
-
-    private void jLabel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseEntered
-        jLabel9.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel9MouseEntered
-
-    private void jLabel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseExited
-        jLabel9.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel9MouseExited
-
-    private void jLabel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseEntered
-        jLabel12.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel12MouseEntered
-
-    private void jLabel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseExited
-        jLabel12.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel12MouseExited
-
-    private void jLabel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseEntered
-        jLabel13.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel13MouseEntered
-
-    private void jLabel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseExited
-        jLabel13.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel13MouseExited
-
-    private void jLabel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseEntered
-        jLabel11.setBackground(new Color(144,224,239));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel11MouseEntered
-
-    private void jLabel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseExited
-        jLabel11.setBackground(new Color(0,119,182));
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel11MouseExited
-
-    private void jLabel24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseEntered
-        // TODO add your handling code here:
-        jLabel24.setForeground(new Color(202,240,248));
-        jLabel24.setText(" Login");
-        jLabel24.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel24MouseEntered
-
-    private void jLabel24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseExited
-        // TODO add your handling code here:
-        jLabel24.setForeground(new Color(255,255,255));
-        jLabel24.setText("Login");
-        jLabel24.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel24MouseExited
-
-    private void jLabel25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseEntered
-        // TODO add your handling code here:
-          jLabel25.setForeground(new Color(202,240,248));
-        jLabel25.setText(" About us");
-        jLabel25.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel25MouseEntered
-
-    private void jLabel25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseExited
-        // TODO add your handling code here:
-        jLabel25.setForeground(new Color(255,255,255));
-        jLabel25.setText("About us");
-        jLabel25.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel25MouseExited
-
-    private void jLabel26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseEntered
-        // TODO add your handling code here:
-          jLabel26.setForeground(new Color(202,240,248));
-        jLabel26.setText(" Blog");
-        jLabel26.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel26MouseEntered
-
-    private void jLabel26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseExited
-        // TODO add your handling code here:
-         jLabel26.setForeground(new Color(255,255,255));
-        jLabel26.setText("Blog");
-        jLabel26.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel26MouseExited
-
-    private void jLabel27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseEntered
-        // TODO add your handling code here:
-         jLabel27.setForeground(new Color(202,240,248));
-        jLabel27.setText(" Contact us");
-        jLabel27.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel27MouseEntered
-
-    private void jLabel27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseExited
-        // TODO add your handling code here:
-        jLabel27.setForeground(new Color(255,255,255));
-        jLabel27.setText("Contact us");
-        jLabel27.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel27MouseExited
-
-    private void jLabel28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseEntered
-        // TODO add your handling code here:
-         jLabel28.setForeground(new Color(202,240,248));
-        jLabel28.setText(" FAQs");
-        jLabel28.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel28MouseEntered
-
-    private void jLabel28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseExited
-        // TODO add your handling code here:
-        jLabel28.setForeground(new Color(255,255,255));
-        jLabel28.setText("FAQs");
-        jLabel28.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel28MouseExited
-
-    private void jLabel29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseEntered
-        // TODO add your handling code here:
-         jLabel29.setForeground(new Color(202,240,248));
-        jLabel29.setText(" My Account");
-        jLabel29.setBackground(new Color(3,4,94));
-    }//GEN-LAST:event_jLabel29MouseEntered
-
-    private void jLabel29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseExited
-        // TODO add your handling code here:
-         jLabel29.setForeground(new Color(255,255,255));
-        jLabel29.setText("My Account");
-        jLabel29.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel29MouseExited
+        jLabel30.setForeground(new Color(255,255,255));
+        jLabel30.setText("Terms and Conditions");
+        jLabel30.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel30MouseExited
 
     private void jLabel30MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseEntered
         // TODO add your handling code here:
@@ -928,48 +1162,217 @@ public class Try extends javax.swing.JFrame {
         jLabel30.setBackground(new Color(3,4,94));
     }//GEN-LAST:event_jLabel30MouseEntered
 
-    private void jLabel30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseExited
+    private void jLabel29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseExited
         // TODO add your handling code here:
-         jLabel30.setForeground(new Color(255,255,255));
-        jLabel30.setText("Terms and Conditions");
-        jLabel30.setBackground(new Color(23,27,42));
-    }//GEN-LAST:event_jLabel30MouseExited
+        jLabel29.setForeground(new Color(255,255,255));
+        jLabel29.setText("My Account");
+        jLabel29.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel29MouseExited
 
-    private void jTextField3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseEntered
+    private void jLabel29MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseEntered
         // TODO add your handling code here:
-        jTextField3.setText("");
-    }//GEN-LAST:event_jTextField3MouseEntered
+        jLabel29.setForeground(new Color(202,240,248));
+        jLabel29.setText(" My Account");
+        jLabel29.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel29MouseEntered
 
-    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
+    private void jLabel28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseExited
         // TODO add your handling code here:
-        jButton1.setBackground(new Color(173,232,244));
-    }//GEN-LAST:event_jButton1MouseEntered
+        jLabel28.setForeground(new Color(255,255,255));
+        jLabel28.setText("FAQs");
+        jLabel28.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel28MouseExited
 
-    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-        jButton1.setBackground(new Color(0,153,153));
+    private void jLabel28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseExited
+        jLabel28.setForeground(new Color(202,240,248));
+        jLabel28.setText(" FAQs");
+        jLabel28.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel28MouseEntered
 
-    private void jLabel32MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseEntered
+    private void jLabel27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseExited
         // TODO add your handling code here:
-        jLabel32.setForeground(new Color(173,232,244));
-    }//GEN-LAST:event_jLabel32MouseEntered
+        jLabel27.setForeground(new Color(255,255,255));
+        jLabel27.setText("Contact us");
+        jLabel27.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel27MouseExited
 
-    private void jLabel32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseExited
+    private void jLabel27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseEntered
         // TODO add your handling code here:
-        jLabel32.setForeground(new Color(255,255,255));
-    }//GEN-LAST:event_jLabel32MouseExited
+        jLabel27.setForeground(new Color(202,240,248));
+        jLabel27.setText(" Contact us");
+        jLabel27.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel27MouseEntered
 
-    private void jLabel34MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseEntered
+    private void jLabel26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseExited
         // TODO add your handling code here:
-        jLabel34.setForeground(new Color(173,232,244));
-        
-    }//GEN-LAST:event_jLabel34MouseEntered
+        jLabel26.setForeground(new Color(255,255,255));
+        jLabel26.setText("Blog");
+        jLabel26.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel26MouseExited
 
-    private void jLabel34MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseExited
+    private void jLabel26MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseEntered
         // TODO add your handling code here:
-        jLabel34.setForeground(new Color(255,255,255));
-    }//GEN-LAST:event_jLabel34MouseExited
+        jLabel26.setForeground(new Color(202,240,248));
+        jLabel26.setText(" Blog");
+        jLabel26.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel26MouseEntered
+
+    private void jLabel25MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseExited
+        // TODO add your handling code here:
+        jLabel25.setForeground(new Color(255,255,255));
+        jLabel25.setText("About us");
+        jLabel25.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel25MouseExited
+
+    private void jLabel25MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseEntered
+        // TODO add your handling code here:
+        jLabel25.setForeground(new Color(202,240,248));
+        jLabel25.setText(" About us");
+        jLabel25.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel25MouseEntered
+
+    private void jLabel24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseExited
+        // TODO add your handling code here:
+        jLabel24.setForeground(new Color(255,255,255));
+        jLabel24.setText("Login");
+        jLabel24.setBackground(new Color(23,27,42));
+    }//GEN-LAST:event_jLabel24MouseExited
+
+    private void jLabel24MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseEntered
+        // TODO add your handling code here:
+        jLabel24.setForeground(new Color(202,240,248));
+        jLabel24.setText(" Login");
+        jLabel24.setBackground(new Color(3,4,94));
+    }//GEN-LAST:event_jLabel24MouseEntered
+
+    private void jLabel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseExited
+        jLabel13.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel13MouseExited
+
+    private void jLabel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseEntered
+        jLabel13.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel13MouseEntered
+
+    private void jLabel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseExited
+        jLabel12.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel12MouseExited
+
+    private void jLabel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseEntered
+        jLabel12.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel12MouseEntered
+
+    private void jLabel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseExited
+        jLabel11.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11MouseExited
+
+    private void jLabel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseEntered
+        jLabel11.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11MouseEntered
+
+    private void jLabel10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseExited
+        // TODO add your handling code here:
+        jLabel10.setBackground(new Color(0,119,182));
+    }//GEN-LAST:event_jLabel10MouseExited
+
+    private void jLabel10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseEntered
+        jLabel10.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel10MouseEntered
+
+    private void jLabel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseExited
+        jLabel9.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel9MouseExited
+
+    private void jLabel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseEntered
+        jLabel9.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel9MouseEntered
+
+    private void jLabel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseExited
+        jLabel8.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel8MouseExited
+
+    private void jLabel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseEntered
+        jLabel8.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel8MouseEntered
+
+    private void jLabel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseExited
+        // TODO add your handling code here:
+        jLabel7.setBackground(new Color(0,119,182));
+    }//GEN-LAST:event_jLabel7MouseExited
+
+    private void jLabel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseEntered
+        // TODO add your handling code here:
+        jLabel7.setBackground(new Color(144,224,239));
+    }//GEN-LAST:event_jLabel7MouseEntered
+
+    private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseExited
+        jLabel3.setBackground(new Color(0,119,182));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel3MouseExited
+
+    private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
+        jLabel3.setBackground(new Color(144,224,239));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel3MouseEntered
+
+    private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
+        jLabel6.setForeground(new Color(0,204,255));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel6MouseExited
+
+    private void jLabel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseEntered
+        jLabel6.setForeground(new Color(0,102,204));
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel6MouseEntered
+
+    private void jLabel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseExited
+        // TODO add your handling code here:
+        jLabel4.setBackground(new Color(255,255,255));
+        jLabel4.setForeground(new Color(0,204,255));
+    }//GEN-LAST:event_jLabel4MouseExited
+
+    private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
+        // TODO add your handling code here:
+        jLabel4.setBackground(new Color(0,204,255));
+        jLabel4.setForeground(new Color(255,255,255));
+    }//GEN-LAST:event_jLabel4MouseEntered
+
+    private void jLabel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseExited
+        // TODO add your handling code here:
+        //        jLabel5.setBackground(new Color(255,255,255));
+        jLabel5.setForeground(new Color(0,204,255));
+    }//GEN-LAST:event_jLabel5MouseExited
+
+    private void jLabel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseEntered
+        // TODO add your handling code here:
+        // jLabel5.setBackground(new Color(0,204,255));
+        jLabel5.setForeground(new Color(0,102,204));
+    }//GEN-LAST:event_jLabel5MouseEntered
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
+        // TODO add your handling code here:
+        //jTextField1.setText("Search Here");
+    }//GEN-LAST:event_jTextField1MouseExited
+
+    private void jTextField1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseEntered
+        // TODO add your handling code here:
+        jTextField1.setText("");
+    }//GEN-LAST:event_jTextField1MouseEntered
 
     /**
      * @param args the command line arguments
@@ -988,20 +1391,20 @@ public class Try extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tuberculosis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tuberculosis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tuberculosis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tuberculosis.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Try().setVisible(true);
+                new Food().setVisible(true);
             }
         });
     }
@@ -1036,17 +1439,69 @@ public class Try extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
